@@ -1,0 +1,45 @@
+irb(main):003:0>  require "./ex25.rb"
+=> true
+irb(main):004:0> words = Ex25.break_words(sentence)
+(irb):4:in `<main>': undefined local variable or method `sentence' for main:Object (NameError)
+        from C:/Program Files (x86)/Ruby32-x64/lib/ruby/gems/3.2.0/gems/irb-1.6.2/exe/irb:11:in `<top (required)>'
+        from C:/Program Files (x86)/Ruby32-x64/bin/irb:33:in `load'
+        from C:/Program Files (x86)/Ruby32-x64/bin/irb:33:in `<main>'
+irb(main):005:0> sentence = "All good things come to those who wait."
+=> "All good things come to those who wait."
+irb(main):006:0> words = Ex25.break_words(sentence)
+=> ["All", "good", "things", "come", "to", "those", "who", "wait."]
+irb(main):007:0> words
+=> ["All", "good", "things", "come", "to", "those", "who", "wait."]
+irb(main):008:0> sorted_words = Ex25.sort_words(words)
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+irb(main):009:0> sorted_words = Ex25.sort_words(words)
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+irb(main):010:0> Ex25.print_first_word(words)
+All
+=> nil
+irb(main):011:0> Ex25.print_last_word(words)
+wait.
+=> nil
+irb(main):012:0>  words
+=> ["good", "things", "come", "to", "those", "who"]
+irb(main):013:0> Ex25.print_first_word(sorted_words)
+All
+=> nil
+irb(main):014:0> Ex25.print_last_word(sorted_words)
+who
+=> nil
+irb(main):015:0> sorted_words
+=> ["come", "good", "things", "those", "to", "wait."]
+irb(main):016:0> sorted_words = Ex25.sort_sentence(sentence)
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+irb(main):017:0> sorted_words
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+irb(main):018:0>  Ex25.print_first_and_last(sentence)
+All
+wait.
+=> nil
+irb(main):019:0> Ex25.print_first_and_last_sorted(sentence)
+All
+who
+=> nil

@@ -2,12 +2,13 @@ cars = 100
 space_in_a_car = 4.0 #not necessary for space_in_a_car to be 4.0 , only 4 is also fine
 drivers = 30
 passengers = 90
+#cars,space_in_a_car,drivers,passengers are variables.
 cars_not_driven = cars - drivers
-cars_driven=drivers
+cars_driven = drivers
 carpool_capacity = cars_driven * space_in_a_car #if this line gets commented with hash, undefined local variable error occurs in line 13 since carpool_capacity is not defined
 average_passenger_per_car = passengers / cars_driven
 
-puts "There are #{cars} cars available."
+puts "There are #{cars} cars available."      #using variables while printing.
 puts "There are only #{drivers} drivers available."
 puts "There will be #{cars_not_driven} empty cars today."
 puts "We can transport #{carpool_capacity} people today."

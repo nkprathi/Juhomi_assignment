@@ -1,10 +1,10 @@
 user_name= ARGV.first
 prompt = '>'
 
-puts "Hi #{user_name} ."
+puts "Hi #{user_name}."
 puts "I'd like to ask you a few questions."
 puts "Do you like me #{user_name}?"
-puts prompt
+puts prompt                #prompt prints in next line #instead of using gets.chomp multiple times we use prompt.
 likes =$stdin.gets.chomp
 
 puts "Where do you live #{user_name}?"
