@@ -1,11 +1,8 @@
 #calculating marks scored
 
-puts "Students of Biology group: "
-puts 53 + 60 + 57
-puts "Students of commerce group:"
-puts 50 + 51 + 55
-puts "Students of Biotech group:"
-puts 45 + 42 +39
+puts "Students of Biology group: #{53 + 60 + 57}"
+puts "Students of commerce group: #{50 + 51 + 55}"
+puts "Students of Biotech group: #{45 + 42 +39}"
 
 #marks scored
 
